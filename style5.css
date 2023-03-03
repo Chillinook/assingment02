@@ -1,0 +1,418 @@
+@media (min-width:801px){
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+        column-gap: 0px;
+        row-gap: 0px;
+        margin: 0;
+        margin-right: 0px;
+        background: #F9FAFB;
+
+    }
+
+    .navbarbox1 {
+
+        grid-column: col-start 1 /span 4;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 80px;
+        background-color: #FFFFFF;
+
+    }
+
+    .navbarbox1prop {
+
+        grid-column: 2;
+        grid-row: 2;
+        width: 118px;
+        height: 33px;
+    }
+
+    .navbarbox2 {
+
+        grid-column: col-start 5 /span 4;
+        grid-row: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FFFFFF;
+
+    }
+
+    .navtext {
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;       
+        color: #667085;
+        background-color: #FFFFFF;
+    }
+
+    .navbarbox3 {
+
+        grid-column: col-start 9 /span 4;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        background-color: #FFFFFF;
+
+    }
+
+    .nav3button {
+
+        grid-column: 8;
+        grid-row: 2;
+        box-sizing: border-box; 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 18px;
+        gap: 8px;
+        width: 160px;
+        height: 44px;      
+        background: #7F56D9;      
+        border: 1px solid #7F56D9;      
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        color: #FFFFFF;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+
+    }
+
+    .maintext,
+    h1 {
+
+        grid-column: col-start 3 /span 8;
+        grid-row: 2;
+        margin-top: 96px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 72px;    
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #101828;
+
+    }
+
+    .formainactext{
+        grid-column: col-start 3 /span 8;
+        grid-row: 3;        
+        display: flex;        
+        justify-content: center;
+    }
+    .mainactext {
+           
+        margin-top: 15px;       
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;    
+        text-align: center;
+        color: #667085;
+
+    }
+
+    .footconfig {
+        grid-column: col-start 2 /span 10;
+        grid-row: 8;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    p,
+    h1 {
+        margin: 0;
+    }
+
+    .mainpic {
+
+        grid-column: col-start 4 /span 6;
+        grid-row: 5;
+        justify-content: center;
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 96px;
+
+    }
+
+    .footfortext {
+
+        grid-column: col-start 4 /span 6;
+        grid-row: 7;
+        display: flex;
+        margin-top: 96px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .foottext {
+
+        display: flex;       
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;      
+        text-align: center;       
+        color: #667085;
+    }
+
+    .buttonpos {
+
+        grid-column: col-start 12;
+        grid-row: 10;
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 40px;
+
+    }
+
+    .qbutton {
+
+        box-sizing: border-box;      
+        display: flex;
+        padding: 15px;
+        gap: 8px;
+        width: 56px;
+        height: 56px;     
+        background: #7F56D9;
+        border: 1px solid #7F56D9;        
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 30px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .container {
+        display: grid;
+        column-gap: 0px;
+        row-gap: 0px;
+        background: #F9FAFB;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "nav1 nav3"
+            "nav2 nav2"
+            "sub1 sub1"
+            "main main"
+            "sub2 sub2"
+            "foot2 foot2"
+            "foot1 foot1";
+
+    }
+
+    .navbarbox1 {
+        grid-area: nav1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+
+    }
+
+    .navbarbox2 {
+        grid-area: nav2;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: #FFFFFF;
+
+    }
+
+    .navtext {
+
+        margin-right: 32px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;      
+        color: #667085;
+    }
+
+    .navbarbox3 {
+
+        grid-area: nav3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FFFFFF;
+
+    }
+
+    .nav3button {
+
+        box-sizing: border-box;   
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 18px;
+        gap: 8px;
+        width: 160px;
+        height: 44px;
+        background: #7F56D9;      
+        border: 1px solid #7F56D9;     
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        color: #FFFFFF;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+
+    }
+
+    .buttonpos {
+
+        grid-area: nav2;
+        justify-content: right;
+        align-items: top;
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .qbutton {
+
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        gap: 8px;
+        width: 40px;
+        height: 40px;
+        background: #7F56D9;
+        border: 1px solid #7F56D9;  
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 30px;
+
+    }
+
+    .maintext,
+    h1 {
+        grid-area: sub1;
+        max-width: 90%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 36px;
+        height: auto;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #101828;
+
+    }
+
+    .formainactext {
+
+        grid-area: sub2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .mainactext {
+
+        grid-area: sub2;
+        max-width: 80%;
+        margin: auto;
+        display: flex;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;    
+        text-align: center;
+        color: #667085;
+
+    }
+
+    .mainpic {
+
+        grid-area: main;
+        justify-content: center;
+        display: flex;
+        height: 80%;
+
+    }
+
+    .footconfig {
+
+        grid-area: foot2;
+        display: flex;
+        flex-wrap: wrap;     
+        justify-content: center;       
+        align-items: center;
+
+    }
+
+    .footfortext {
+
+        grid-area: foot1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .foottext {
+        grid-area: foot1;
+        display: flex;    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;      
+        text-align: center;
+        color: #667085;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    p,
+    h1 {
+        margin: 0;
+    }
+
+}
